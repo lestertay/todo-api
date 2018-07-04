@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
 
 // define schema
-cosnt todoSchema = new mongoose.Schema({
+const todoSchema = new mongoose.Schema({
 	name: {
 		type: String,
 		required: "Name cannot be blank"
 	},
 	completed: {
-		type: boolean,
+		type: Boolean,
 		default: false
 	},
 	created_Date: {
 		type: Date,
-		default: Date.now
+		default: Date.now()
 	}
 });
 
