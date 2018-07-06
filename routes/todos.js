@@ -1,6 +1,8 @@
+// store all routes in a router object
 const express = require("express"),
 	  router  = express.Router(),
 	  db      = require("../models");
+
 // RESTful routes: CRUD, create(2) read update(2) delete
 router.get("/", function(req, res){
 	db.Todo.find()
